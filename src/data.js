@@ -42,13 +42,13 @@ export const navMenuItems = [
 export const pageLinks = [
   {
     id: 1,
-    href: '#',
+    href: '#shop',
     label: 'Shop',
   },
-  { id: 2, href: '#', label: 'Blog' },
-  { id: 3, href: '#', label: 'About' },
-  { id: 4, href: '#', label: 'Contact' },
-  { id: 5, href: '#', label: 'Team' },
+  { id: 2, href: '#blog', label: 'Blog' },
+  { id: 3, href: '#about', label: 'About' },
+  { id: 4, href: '#contact', label: 'Contact' },
+  { id: 5, href: '#team', label: 'Team' },
 ];
 
 export const socialLinks = [

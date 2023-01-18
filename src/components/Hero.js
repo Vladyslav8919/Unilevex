@@ -14,7 +14,7 @@ const Hero = () => {
           </h1>
           <div className="items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start ">
             <a
-              href="#"
+              href="#shop"
               className="block px-6 py-2 text-center text-[#feefe0] bg-[#23292E] "
             >
               Shop now
