@@ -8,14 +8,14 @@ const Hero = () => {
           <p className="max-w-xl leading-relaxed text-[#23292E] sm:mx-auto lg:ml-0">
             Interior Needs
           </p>
-          <h1 className="text-4xl font-bold text-[#23292E]">
+          <h1 className="text-4xl font-bold text-black">
             Various new collections of furniture to decorate the corner of your
             house.
           </h1>
           <div className="items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start ">
             <a
               href="#shop"
-              className="block px-6 py-2 text-center text-[#feefe0] bg-[#23292E] "
+              className="block px-6 py-2 text-center text-[#feefe0] bg-black "
             >
               Shop now
             </a>

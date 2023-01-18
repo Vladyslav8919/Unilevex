@@ -1,10 +1,10 @@
-import StoreItemsList from './StoreItemsList';
-import Title from './Title';
+import StoreItemsList from './NoveltiesItemsList';
+import Title from '../Title';
 
 const Store = () => {
   return (
     <section className="section" id="shop">
-      <Title>Welcome to our Store</Title>
+      <Title>Novelties</Title>
       <div className="section-center featured-center">
         <StoreItemsList />
       </div>

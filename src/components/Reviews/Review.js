@@ -1,4 +1,4 @@
-import { reviews } from '../data';
+import { reviews } from '../../data';
 import React, { useState } from 'react';
 import { IoMdQuote } from 'react-icons/io';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
