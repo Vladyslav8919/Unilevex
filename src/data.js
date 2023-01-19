@@ -34,9 +34,9 @@ export const assortment = [
 ];
 
 export const navMenuItems = [
-  { id: 1, icon: <BiSearch />, label: 'Search', href: '#' },
-  { id: 2, icon: <RxPerson />, label: 'Account', href: '#' },
-  { id: 3, icon: <FiShoppingCart />, label: 'Cart', href: '#' },
+  // { id: 2, icon: <RxPerson />, label: 'Account', href: '#' },
+  { id: 1, icon: <FiShoppingCart />, label: 'Cart', href: '#' },
+  { id: 2, icon: <BiSearch />, label: 'Search', href: '#' },
 ];
 
 export const pageLinks = [
@@ -192,5 +192,44 @@ export const shopData = [
     price: 1699,
     img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T095735Z&X-Amz-Expires=25200&X-Amz-Signature=baf69e9e57a2bdfd1ced0f0413f932d24fc02389047dd5797ba04cb9db9dca8e&X-Amz-SignedHeaders=host',
     desc: `The Spanish Chair, designed by Børge Mogensen for Fredericia, is a Danish design icon from 1958. Due to the broad armrests, the Spanish Chair can be used without a separate side table, making the surrounding space more open.`,
+  },
+];
+
+export const sliderData = [
+  {
+    id: 1,
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+    name: 'maria ferguson',
+    title: 'office manager',
+    quote:
+      'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
+  },
+  {
+    id: 2,
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
+    name: 'john doe',
+    title: 'regular guy',
+    quote:
+      'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
+  },
+  {
+    id: 3,
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg',
+    name: 'peter smith',
+    title: 'product designer',
+    quote:
+      'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
+  },
+  {
+    id: 4,
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+    name: 'susan andersen',
+    title: 'the boss',
+    quote:
+      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ',
   },
 ];

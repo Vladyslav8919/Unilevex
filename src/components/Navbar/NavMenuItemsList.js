@@ -1,13 +1,12 @@
 import NavMenuItem from './NavMenuItem';
 import { navMenuItems } from '../../data';
 
-const NavMenuItemsList = ({ navbarOpen }) => {
+const NavMenuItemsList = () => {
   return (
     <>
       {navMenuItems.map(({ id, href, icon, label }) => (
         <NavMenuItem key={id} href={href}>
           {icon}
-          {navbarOpen && <span className="ml-2">{label}</span>}
         </NavMenuItem>
       ))}
     </>

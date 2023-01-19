@@ -31,11 +31,11 @@ const Tabs = () => {
       <div className="title">
         <Title>Experience</Title>
         <div className="jobs-center">
-          <div className="flex place-content-center gap-x-2 mb-5 border-b border-gray-200 w-3/4 mx-auto">
+          <div className="flex place-content-center gap-x-2 mb-5 w-3/4 mx-auto">
             {jobs.map((item, index) => {
               return (
                 <button
-                  key={item}
+                  key={index}
                   onClick={() => setValue(index)}
                   className={`mb-1  ${index === value && 'active-btn'}`}
                 >

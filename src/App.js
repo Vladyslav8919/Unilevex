@@ -6,6 +6,7 @@ import Reviews from './components/Reviews/Reviews';
 import Novelties from './components/Novelties/Novelties';
 import Shop from './components/Shop/Shop';
 import Tabs from './components/Tabs/Tabs';
+import Slider from './components/Slider/Slider';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Accordion />
       <Shop />
       <Tabs />
+      <Slider />
       <Footer />
     </>
   );
