@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BsChevronRight, BsChevronLeft } from 'react-icons/bs';
 import { IoMdQuote } from 'react-icons/io';
 import { sliderData } from '../../data';

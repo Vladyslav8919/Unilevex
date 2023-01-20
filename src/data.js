@@ -12,7 +12,7 @@ import wegner from './images/wegner.png';
 import swivel from './images/swivel.png';
 
 import { BiSearch } from 'react-icons/bi';
-import { RxPerson } from 'react-icons/rx';
+// import { RxPerson } from 'react-icons/rx';
 import { FiShoppingCart } from 'react-icons/fi';
 
 export const assortment = [

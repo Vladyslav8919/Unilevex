@@ -11,7 +11,7 @@ const allCategories = [
 
 const Shop = () => {
   const [shopItems, setShopItems] = useState(shopData);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
   // console.log('categories: ' + categories);
 
   const filterItems = (category) => {

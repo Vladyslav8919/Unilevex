@@ -19,7 +19,7 @@ const Navbar = () => {
     } else {
       linksContainerRef.current.style.height = '0px';
     }
-  }, [showLinks]);
+  }, [showLinks, linksRef]);
 
   return (
     <>
