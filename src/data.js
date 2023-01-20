@@ -1,6 +1,15 @@
 import lamp1 from './images/lamp-1.png';
 import lamp2 from './images/lamp-2.png';
 import lamp3 from './images/lamp-3.png';
+import hyken from './images/hyken.png';
+import verve from './images/verve.png';
+import futura from './images/futura.png';
+import fritz from './images/fritz.png';
+import kizu from './images/kizu.png';
+import branch from './images/branch-erg.png';
+import vaya from './images/vaya.png';
+import wegner from './images/wegner.png';
+import swivel from './images/swivel.png';
 
 import { BiSearch } from 'react-icons/bi';
 import { RxPerson } from 'react-icons/rx';
@@ -126,7 +135,7 @@ export const shopData = [
     title: 'Hyken Mesh Chair',
     category: 'chair',
     price: 1249,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T092449Z&X-Amz-Expires=25200&X-Amz-Signature=934d37b4e74e065312c26bcafd1aa65a30f8ca46845979b5fef3da08eff8df96&X-Amz-SignedHeaders=host',
+    img: hyken,
     desc: `Also known as Wishbone, is a true Danish design classic. Designed by Hans J. Wegner in 1949, the Wishbone chair has been produced by Carl Hansen & Søn since 1950.`,
   },
   {
@@ -134,7 +143,7 @@ export const shopData = [
     title: 'Branch Verve Chair',
     category: 'chair',
     price: 1399,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_8.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T092449Z&X-Amz-Expires=25200&X-Amz-Signature=8377607cb5a853d7e88bb405bf6623f9897e24775c2a924d9884a335c27324a3&X-Amz-SignedHeaders=host',
+    img: verve,
     desc: `Tradition’s Little Petra lounge chair and pouf charm with their compact size, flowing silhouette and soft sheepskin upholstery. The petite, friendly chair and pouf are a lovable example of the Danish funkis style of the 1930s.`,
   },
   {
@@ -142,7 +151,7 @@ export const shopData = [
     title: 'Futura Antique Brass',
     category: 'lamp',
     price: 699,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_10.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T092449Z&X-Amz-Expires=25200&X-Amz-Signature=313db2253cc3f2ea1a53df93c288221acf62fad30ac753079ebe9a8f0e36d169&X-Amz-SignedHeaders=host',
+    img: futura,
     desc: `Genuine Scandinavian design, Danish design heritage, and first-rate build quality. The carefully finished Wishbone is a masterpiece of traditional craftsmanship and Danish design.`,
   },
   {
@@ -150,7 +159,7 @@ export const shopData = [
     title: 'Midnight Fritz Hansen Lamp',
     category: 'lamp',
     price: 299,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_12.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T092449Z&X-Amz-Expires=25200&X-Amz-Signature=b420c7c0faf8e6c7d07504fcdbf4c8a744abc48274fbd006fcb7fc4f8d20ece1&X-Amz-SignedHeaders=host',
+    img: fritz,
     desc: `Cale Floor Lamp Matt Black has a stylish and neat design. The streamlined and modern expression isn’t just a beautiful feature but also a practical one.`,
   },
   {
@@ -158,7 +167,7 @@ export const shopData = [
     title: 'Kizu DybergLarsen Lamp',
     category: 'lamp',
     price: 229,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_13.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T092449Z&X-Amz-Expires=25200&X-Amz-Signature=e9116f096315ba706ce36586d5ff214cdf7c7f86c44c30e8556b2d86a216ab1b&X-Amz-SignedHeaders=host',
+    img: kizu,
     desc: `Lovely design from the Easton lamp collection by Dyberg Larsen, a brand that never compromises on the classic Nordic aesthetic. This is clear to see in this simple, elegant floor lamp. `,
   },
   {
@@ -166,7 +175,7 @@ export const shopData = [
     title: 'Branch Ergonomic Chair',
     category: 'chair',
     price: 1899,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T092449Z&X-Amz-Expires=25200&X-Amz-Signature=a05c4cc806e0bdd1a55b96624ed3a586b0e74df7b9122aebd704e8b15d92fd31&X-Amz-SignedHeaders=host',
+    img: branch,
     desc: `A classic of Danish furniture design, created in 1947 by architect Børge Mogensen who was 28 years old at the time. A timeless and organic combination of solid wood frame and paper yearn seat, the J39 chair works perfectly by a dining table as well as in the living room or office.`,
   },
   {
@@ -174,7 +183,7 @@ export const shopData = [
     title: 'Vaya Limited Edition Chair',
     category: 'chair',
     price: 4899,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_400X308.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T095735Z&X-Amz-Expires=25200&X-Amz-Signature=2407411739b79b9d33477bca54bc74f4f8da8f817caec8dfca09c06201339f36&X-Amz-SignedHeaders=host',
+    img: vaya,
     desc: `A beautiful piece of Danish mid-century design. Crafted from solid wood with a charming hand-woven paper cord seat, the chair is characterised by its crescent-shaped backrest and diagonally placed braces.`,
   },
   {
@@ -182,7 +191,7 @@ export const shopData = [
     title: 'Wegner Swivel Chair',
     category: 'chair',
     price: 2299,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T095735Z&X-Amz-Expires=25200&X-Amz-Signature=50a3183ea7fdab85eaa61b300f9b2f520359199f7e61ad86e7e92d8eb1638ed5&X-Amz-SignedHeaders=host',
+    img: wegner,
     desc: `Light visually and in weight. No screws or other metal fittings are used in the assembly – yet the stool is extremely comfortable and sturdy, thanks to its innovative three-legged structure and manufacturing method that combines robotics and craftsmanship.  `,
   },
   {
@@ -190,7 +199,7 @@ export const shopData = [
     title: 'Luxury Swivel Armchair',
     category: 'chair',
     price: 1699,
-    img: 'https://dhws-production.s3.ap-south-1.amazonaws.com/60d476bc92d3a3001575d2ee/60d47a1992d5640016253693/630387358d7e9c0015024bf7/appSource/images/img_frame149_2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQODH4IWP7NVLCS23%2F20230118%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20230118T095735Z&X-Amz-Expires=25200&X-Amz-Signature=baf69e9e57a2bdfd1ced0f0413f932d24fc02389047dd5797ba04cb9db9dca8e&X-Amz-SignedHeaders=host',
+    img: swivel,
     desc: `The Spanish Chair, designed by Børge Mogensen for Fredericia, is a Danish design icon from 1958. Due to the broad armrests, the Spanish Chair can be used without a separate side table, making the surrounding space more open.`,
   },
 ];

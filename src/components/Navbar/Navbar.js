@@ -41,7 +41,7 @@ const Navbar = () => {
             <PageLinks
               ref={linksRef}
               parentClass="md:flex gap-3 "
-              itemClass="text-sm px-2 block  items-center leading-relaxed py-2 whitespace-nowrap  text-black hover:bg-black hover:text-white ease-in-out duration-150"
+              itemClass="text-sm px-2 block  items-center leading-relaxed py-2 whitespace-nowrap  text-black hover:bg-black hover:text-white md:hover:bg-white md:hover:text-gray-600 ease-in-out duration-150"
             />
           </div>
           <ul className="hidden md:flex">
