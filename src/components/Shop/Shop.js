@@ -20,15 +20,13 @@ const Shop = () => {
       return;
     }
     const newItems = shopData.filter((item) => item.category === category);
-    console.log('new items: ' + newItems);
     setShopItems(newItems);
-    console.log('shop items: ' + shopItems);
   };
 
   return (
     <section className="shop section" id="new">
       <div className="title">
-        <Title>Our store</Title>
+        <Title>Our Shop</Title>
       </div>
       <ShopCategories categories={categories} filterItems={filterItems} />
       <ShopItemsList items={shopItems} />

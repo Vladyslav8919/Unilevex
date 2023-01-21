@@ -49,15 +49,16 @@ export const navMenuItems = [
 ];
 
 export const pageLinks = [
+  { id: 1, path: '/', label: 'Home' },
   {
-    id: 1,
-    href: '#shop',
+    id: 2,
+    path: '/shop',
     label: 'Shop',
   },
-  { id: 2, href: '#blog', label: 'Blog' },
-  { id: 3, href: '#about', label: 'About' },
-  { id: 4, href: '#contact', label: 'Contact' },
-  { id: 5, href: '#team', label: 'Team' },
+  { id: 3, path: '/blog', label: 'Blog' },
+  { id: 4, path: '/about', label: 'About' },
+  { id: 5, path: '/contact', label: 'Contact' },
+  // { id: 6, path: '/team', label: 'Team' },
 ];
 
 export const socialLinks = [

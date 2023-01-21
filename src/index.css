@@ -209,10 +209,11 @@ body {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
+  gap: 40px;
 }
 .category--filter-btn {
   background: transparent;
-  border-color: transparent;
+  /* border-color: transparent; */
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0 0.5rem;

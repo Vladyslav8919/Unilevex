@@ -3,7 +3,7 @@ import PageLinks from './PageLinks';
 
 const Footer = () => {
   return (
-    <footer className="section footer">
+    <footer className="section footer ">
       <PageLinks parentClass="footer-links" itemClass="footer-link" />
       <ul className="footer-icons">
         {socialLinks.map(({ id, href, icon }) => (

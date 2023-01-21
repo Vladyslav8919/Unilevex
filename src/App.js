@@ -1,25 +1,22 @@
-import Accordion from './components/Accordion/Accordion';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar/Navbar';
-import Reviews from './components/Reviews/Reviews';
-import Novelties from './components/Novelties/Novelties';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import Shop from './components/Shop/Shop';
-import Tabs from './components/Tabs/Tabs';
-import Slider from './components/Slider/Slider';
+import About from './components/About';
+import Home from './components/Home';
+import ErrorPage from './components/ErrorPage';
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Novelties />
-      <Reviews />
-      <Accordion />
-      <Shop />
-      <Tabs />
-      <Slider />
-      <Footer />
+      {/* <Navbar /> */}
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes>
     </>
   );
 };

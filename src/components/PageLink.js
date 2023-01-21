@@ -1,9 +1,18 @@
-const PageLink = ({ href, label, itemClass }) => {
+import { NavLink } from 'react-router-dom';
+
+const PageLink = ({ path, label, itemClass }) => {
+  let activeStyle = {
+    fontWeight: '500',
+  };
   return (
     <li>
-      <a href={href} className={itemClass}>
+      <NavLink
+        to={path}
+        className={itemClass}
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
         {label}
-      </a>
+      </NavLink>
     </li>
   );
 };
