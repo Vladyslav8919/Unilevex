@@ -1,19 +1,21 @@
-import lamp1 from './images/lamp-1.png';
-import lamp2 from './images/lamp-2.png';
-import lamp3 from './images/lamp-3.png';
-import hyken from './images/hyken.png';
-import verve from './images/verve.png';
-import futura from './images/futura.png';
-import fritz from './images/fritz.png';
-import kizu from './images/kizu.png';
-import branch from './images/branch-erg.png';
-import vaya from './images/vaya.png';
-import wegner from './images/wegner.png';
-import swivel from './images/swivel.png';
+import lamp1 from './assets/lamp-1.png';
+import lamp2 from './assets/lamp-2.png';
+import lamp3 from './assets/lamp-3.png';
+import hyken from './assets/hyken.png';
+import verve from './assets/verve.png';
+import futura from './assets/futura.png';
+import fritz from './assets/fritz.png';
+import kizu from './assets/kizu.png';
+import branch from './assets/branch-erg.png';
+import vaya from './assets/vaya.png';
+import wegner from './assets/wegner.png';
+import swivel from './assets/swivel.png';
+import { GiStairsGoal, GiTeamIdea } from 'react-icons/gi';
+import { MdHistoryEdu } from 'react-icons/md';
 
-import { BiSearch } from 'react-icons/bi';
-// import { RxPerson } from 'react-icons/rx';
-import { FiShoppingCart } from 'react-icons/fi';
+// import { BiSearch } from 'react-icons/bi';
+import { RxPerson } from 'react-icons/rx';
+// import { FiShoppingCart } from 'react-icons/fi';
 
 export const assortment = [
   {
@@ -42,21 +44,21 @@ export const assortment = [
   },
 ];
 
-export const navMenuItems = [
-  // { id: 2, icon: <RxPerson />, label: 'Account', href: '#' },
-  { id: 1, icon: <FiShoppingCart />, label: 'Cart', href: '#' },
-  { id: 2, icon: <BiSearch />, label: 'Search', href: '#' },
-];
+// export const navMenuItems = [
+//   { id: 1, icon: <FiShoppingCart />, label: 'Cart', href: '#' },
+//   { id: 2, icon: <RxPerson />, label: 'Account', href: '#' },
+//   // { id: 2, icon: <BiSearch />, label: 'Search', href: '#' },
+// ];
 
 export const pageLinks = [
   { id: 1, path: '/', label: 'Home' },
+  { id: 2, path: '/about', label: 'About' },
   {
-    id: 2,
-    path: '/shop',
-    label: 'Shop',
+    id: 3,
+    path: '/products',
+    label: 'Products',
   },
-  { id: 3, path: '/blog', label: 'Blog' },
-  { id: 4, path: '/about', label: 'About' },
+  { id: 4, path: '/blog', label: 'Blog' },
   { id: 5, path: '/contact', label: 'Contact' },
   // { id: 6, path: '/team', label: 'Team' },
 ];
@@ -241,5 +243,26 @@ export const sliderData = [
     title: 'the boss',
     quote:
       'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ',
+  },
+];
+
+export const services = [
+  {
+    id: 1,
+    icon: <GiStairsGoal />,
+    title: 'mission',
+    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+  },
+  {
+    id: 2,
+    icon: <GiTeamIdea />,
+    title: 'vision',
+    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+  },
+  {
+    id: 3,
+    icon: <MdHistoryEdu />,
+    title: 'history',
+    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
   },
 ];

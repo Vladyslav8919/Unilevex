@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { useProductsContext } from '../../context/products_context';
 import PageLinks from '../PageLinks';
-import NavMenuItemsList from './NavMenuItemsList';
+import NavButtons from './NavButtons';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -12,48 +14,41 @@ const Navbar = () => {
     setShowLinks(!showLinks);
   };
 
-  useEffect(() => {
-    const linksHeight = linksRef.current.getBoundingClientRect().height;
-    if (showLinks) {
-      linksContainerRef.current.style.height = `${linksHeight}px`;
-    } else {
-      linksContainerRef.current.style.height = '0px';
-    }
-  }, [showLinks, linksRef]);
+  // useEffect(() => {
+  //   const linksHeight = linksRef.current.getBoundingClientRect().height;
+  //   if (showLinks) {
+  //     linksContainerRef.current.style.height = `${linksHeight}px`;
+  //   } else {
+  //     linksContainerRef.current.style.height = '0px';
+  //   }
+  // }, [showLinks, linksRef]);
+
+  const { openSidebar } = useProductsContext();
 
   return (
     <>
-      <nav className="flex sticky top-0  px-2 py-3 bg-white mb-0 z-10">
-        <div className=" grow max-w-screen-xl px-4 mx-auto flex  items-center justify-between">
-          <div className="grow md:grow-0 flex justify-between items-center">
-            <a
-              className=" 
-              text-sm font-bold flex items-center tracking-wider leading-relaxed inline-block  py-2  whitespace-nowrap uppercase text-black"
-              href="#placeholder"
-            >
+      <nav className="flex justify-center items-center">
+        <div className="flex justify-between w-[90vw] h-16 mx-auto my-0 max-w-[1170px] md:grid grid-cols-[auto_1fr_auto] items-center">
+          <div className="flex grow items-center justify-between">
+            <Link to="/" className=" font-bold tracking-wider">
               Unilevex
-            </a>
+            </Link>
+            <button
+              className="pointer md:hidden"
+              type="button"
+              onClick={openSidebar}
+            >
+              <AiOutlineMenu />
+            </button>
           </div>
-          <div
-            ref={linksContainerRef}
-            className="h-0 md:!h-auto overflow-hidden ease-in-out duration-300 mr-6 md:mr-0"
-          >
+          <div className="">
             <PageLinks
               ref={linksRef}
-              parentClass="md:flex gap-3 "
-              itemClass="text-sm px-2 block  items-center leading-relaxed py-2 whitespace-nowrap  text-black hover:bg-black hover:text-white md:hover:bg-white md:hover:text-gray-600 ease-in-out duration-150"
+              parentClass="hidden md:flex md:justify-center"
+              itemClass="mx-3 font-light text-sm tracking-wide"
             />
           </div>
-          <ul className="hidden md:flex">
-            <NavMenuItemsList navbarOpen={toggleLinks} />
-          </ul>
-          <button
-            className="text-black cursor-pointer text-base leading-none py-1 border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none"
-            type="button"
-            onClick={toggleLinks}
-          >
-            <AiOutlineMenu />
-          </button>
+          <NavButtons className="hidden md:grid" />
         </div>
       </nav>
     </>

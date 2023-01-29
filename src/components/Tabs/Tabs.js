@@ -20,16 +20,16 @@ const Tabs = () => {
   }, []);
   if (isLoading)
     return (
-      <section className="section loading">
+      <section className="section section-center loading">
         <h1>Loading...</h1>
       </section>
     );
   const { company, dates, duties, title } = jobs[value];
 
   return (
-    <section className="section">
-      <div className="title">
-        <Title>Experience</Title>
+    <section className="section section-center ">
+      <div className="title pt-16">
+        <Title>Lorem</Title>
         <div className="jobs-center">
           <div className="flex place-content-center gap-x-2 mb-5 w-3/4 mx-auto">
             {jobs.map((item, index) => {

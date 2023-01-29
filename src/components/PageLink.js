@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-const PageLink = ({ path, label, itemClass }) => {
+const PageLink = ({ path, label, itemClass, onClose }) => {
   let activeStyle = {
     fontWeight: '500',
   };
@@ -10,6 +10,7 @@ const PageLink = ({ path, label, itemClass }) => {
         to={path}
         className={itemClass}
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        onClick={onClose}
       >
         {label}
       </NavLink>

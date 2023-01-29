@@ -1,13 +1,15 @@
 import Hero from './Hero';
-import Novelties from './Novelties/Novelties';
+import NewArrival from './NewArrival/NewArrival';
+import Newsletter from './Newsletter';
 import Reviews from './Reviews/Reviews';
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Novelties />
+      <NewArrival />
       <Reviews />
+      <Newsletter />
     </>
   );
 };
