@@ -9,6 +9,7 @@ import ErrorPage from './components/ErrorPage';
 import AuthWrapper from './pages/AuthWrapper';
 import CheckoutPage from './pages/CheckoutPage';
 import CartPage from './pages/CartPage';
+import Team from './components/Team';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index="/" element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="team" element={<Team />} />
           <Route path="cart" element={<CartPage />} />
           <Route path="/checkout" element={<PrivateRoute />}>
             <Route path="/checkout" element={<CheckoutPage />} />

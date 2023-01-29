@@ -17,13 +17,13 @@ const CartContent = () => {
       <div className="flex justify-between mt-8">
         <Link
           to="/products"
-          className="bg-transparent border-transparent capitalize py-1 px-2 bg-black text-white tracking-wide font-normal pointer"
+          className="bg-transparent border-transparent capitalize py-1 px-2 bg-black text-black text-sm border-2 border-black tracking-wide font-normal pointer"
         >
           Continue shopping
         </Link>
         <button
           type="button"
-          className="bg-transparent border-transparent capitalize py-1 px-2 bg-black text-white tracking-wide font-normal pointer clear-btn"
+          className="border-transparent capitalize py-1 px-2 bg-black text-white text-sm border-2 border-black tracking-wide font-normal pointer clear-btn"
           onClick={clearCart}
         >
           Clear shopping cart

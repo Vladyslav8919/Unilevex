@@ -4,7 +4,7 @@ const Reviews = () => {
   return (
     <section className="section" id="reviews">
       <Title>Our Reviews</Title>
-      <div className="section-center"></div>
+      <div className="section-center  "></div>
       <Review />
     </section>
   );

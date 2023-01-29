@@ -12,19 +12,22 @@ const CartTotals = () => {
     <section className="mt-12 flex justify-center md:justify-end">
       <div>
         <article className="border border-grey-800 py-6 px-12">
-          <h5 className="grid grid-cols-[200px_1fr]">
-            subtotal: <span>{formatPrice(total_amount)}</span>
+          <h5 className="text-sm grid grid-cols-[200px_1fr]">
+            Subtotal: <span>{formatPrice(total_amount)}</span>
           </h5>
-          <p className="grid grid-cols-[200px_1fr] capitalize">
-            shipping fee : <span>{formatPrice(shipping_fee)}</span>
+          <p className="text-sm grid grid-cols-[200px_1fr] capitalize">
+            Shipping fee: <span>{formatPrice(shipping_fee)}</span>
           </p>
           <hr />
-          <h4 className="mt-8 grid grid-cols-[200px_1fr]">
-            order total: <span>{formatPrice(total_amount + shipping_fee)}</span>
-          </h4>
+          <p className="mt-8 text-sm font-bold grid grid-cols-[200px_1fr]">
+            Order total: <span>{formatPrice(total_amount + shipping_fee)}</span>
+          </p>
         </article>
         {myUser ? (
-          <Link to="/checkout" className="w-full mt-4 text-center font-bold">
+          <Link
+            to="/checkout"
+            className="inline-block w-full mt-4 text-center font-bold border border-gray-200"
+          >
             Proceed to checkout
           </Link>
         ) : (

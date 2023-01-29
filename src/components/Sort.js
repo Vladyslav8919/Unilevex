@@ -19,7 +19,7 @@ const Sort = () => {
           type="button"
           className={`${
             grid_view
-              ? 'bg-black border-1 text-white w-6 flex items-center justify-center pointer'
+              ? 'bg-black text-white w-6 flex items-center justify-center pointer'
               : 'bg-transparent border-1 text-black w-6 flex items-center justify-center pointer'
           }`}
           onClick={setGridView}
@@ -28,7 +28,7 @@ const Sort = () => {
         </button>
         <button
           type="button"
-          className={`${!grid_view ? 'active' : null}`}
+          className={`${!grid_view ? 'bg-black text-white' : null}`}
           onClick={setListView}
         >
           <BsList />

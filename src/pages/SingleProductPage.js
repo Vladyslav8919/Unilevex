@@ -59,7 +59,7 @@ const SingleProductPage = () => {
       <div className="section section-center page">
         <Link
           to="/products"
-          className="py-2 px-1.5 uppercase tracking-wider text-sm text-white bg-black"
+          className="py-2 px-2 uppercase tracking-wide text-xs text-black  border-2 border-black bg-transparent "
         >
           Back to products
         </Link>

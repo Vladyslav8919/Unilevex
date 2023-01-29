@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-center items-center">
+      <nav className="flex justify-center items-center h-[10vh]">
         <div className="flex justify-between w-[90vw] h-16 mx-auto my-0 max-w-[1170px] md:grid grid-cols-[auto_1fr_auto] items-center">
           <div className="flex grow items-center justify-between">
             <Link to="/" className=" font-bold tracking-wider">
@@ -45,7 +45,7 @@ const Navbar = () => {
             <PageLinks
               ref={linksRef}
               parentClass="hidden md:flex md:justify-center"
-              itemClass="mx-3 font-light text-sm tracking-wide"
+              itemClass="mx-3 lg:mx-4 text-gray-800 text-sm font-light lg:text-base  tracking-wide"
             />
           </div>
           <NavButtons className="hidden md:grid" />

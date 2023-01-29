@@ -8,8 +8,8 @@ const Home = () => {
     <>
       <Hero />
       <NewArrival />
-      <Reviews />
       <Newsletter />
+      <Reviews />
     </>
   );
 };

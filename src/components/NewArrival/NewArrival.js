@@ -19,8 +19,8 @@ const NewArrival = () => {
     return <Error />;
   }
   return (
-    <section className="section">
-      <div className="title">
+    <section className="section section-center">
+      <div className="mt-12">
         <Title>New Arrival</Title>
       </div>
       <div className="section-center featured my-16 mx-auto grid gap-10 grid grid-cols-2 sm:grid-cols-3">

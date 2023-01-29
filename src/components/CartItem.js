@@ -26,7 +26,7 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
           <p className=" text-gray-500 text-xs md:text-sm tracking-wide capitalize mb-0 flex items-center justify-start">
             color :{' '}
             <span
-              className="text-xs md:text-sm inline-block w-2 h-2 bg-red-500 ml-2 w-3 h-3"
+              className="text-xs md:text-sm inline-block border border-gray-100 w-2 h-2 ml-2 w-3 h-3"
               style={{ background: color }}
             ></span>
           </p>
@@ -44,7 +44,7 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
       </h5>
       <button
         type="button"
-        className="text-white bg-transparent border-transparent tracking-wide w-6 h-6 flex items-center justify-center text-xs pointer"
+        className="text-black bg-transparent border-transparent tracking-wide w-6 h-6 flex items-center justify-center text-xs pointer"
         onClick={() => removeItem(id)}
       >
         <FaTrash />

@@ -34,7 +34,11 @@ const Slider = () => {
 
   return (
     <section className="slider-section">
-      <Title>Reviews 2</Title>
+      <Title>Meet Our Team</Title>
+      <p className="text-center text-sm text-gray-500">
+        We write various things related to furniture, from tips and what things
+        I need to pay attention to when choosing furniture
+      </p>
       <div className="slider-section-center">
         {sliderData.map((item, itemIndex) => {
           const { id, image, name, title, quote } = item;

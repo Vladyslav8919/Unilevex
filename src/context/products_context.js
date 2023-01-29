@@ -2,8 +2,7 @@ import axios from 'axios';
 import React, { useContext, useReducer } from 'react';
 import { useEffect } from 'react';
 
-// utils / constants
-const products_url = 'https://course-api.com/react-store-products';
+import { products_url as url } from '../utils/constants';
 
 const ProductsContext = React.createContext();
 
@@ -107,7 +106,7 @@ export const ProductsProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchProducts(products_url);
+    fetchProducts(url);
   }, []);
 
   return (

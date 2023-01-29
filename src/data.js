@@ -58,8 +58,8 @@ export const pageLinks = [
     path: '/products',
     label: 'Products',
   },
-  { id: 4, path: '/blog', label: 'Blog' },
-  { id: 5, path: '/contact', label: 'Contact' },
+  { id: 4, path: '/team', label: 'Team' },
+  // { id: 5, path: '/contact', label: 'Contact' },
   // { id: 6, path: '/team', label: 'Team' },
 ];
 
@@ -69,22 +69,62 @@ export const socialLinks = [
   { id: 3, href: 'https://www.twitter.com', icon: 'fab fa-squarespace' },
 ];
 
+export const jobs = [
+  {
+    id: 'recAGJfiU4CeaV0HL',
+    order: 3,
+    title: 'Success',
+    dates: 'December 2015 - Present',
+    duties: [
+      'Everyone says it, but in our case it’s true: our team is the secret to our success. Each of our employees is amazing in their own right, but together they are what makes Rostrum such a fun and rewarding place to work.',
+      'Post-ironic selvage chambray sartorial freegan meditation. Chambray chartreuse kombucha meditation, man bun four dollar toast street art cloud bread live-edge heirloom.',
+      'Butcher drinking vinegar franzen authentic messenger bag copper mug food truck taxidermy. Mumblecore lomo echo park readymade iPhone migas single-origin coffee franzen cloud bread tilde vegan flexitarian.',
+    ],
+    company: 'TOMMY',
+  },
+  {
+    id: 'recIL6mJNfWObonls',
+    order: 2,
+    title: 'Proudness',
+    dates: 'May 2015 - December 2015',
+    duties: [
+      'Hashtag drinking vinegar scenester mumblecore snackwave four dollar toast, lumbersexual XOXO. Cardigan church-key pabst, biodiesel vexillologist viral squid.',
+      'Franzen af pitchfork, mumblecore try-hard kogi XOXO roof party la croix cardigan neutra retro tattooed copper mug. Meditation lomo biodiesel scenester',
+      'Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1',
+      'Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1',
+    ],
+    company: 'BIGDROP',
+  },
+  {
+    id: 'rec61x18GVY99hQq5',
+    order: 1,
+    title: 'Acquisition',
+    dates: 'May 2014 - September 2015',
+    duties: [
+      "I'm baby woke mumblecore stumptown enamel pin. Snackwave prism pork belly, blog vape four loko sriracha messenger bag jean shorts DIY bushwick VHS. Banjo post-ironic hella af, palo santo craft beer gluten-free.",
+      'YOLO drinking vinegar chambray pok pok selfies quinoa kinfolk pitchfork street art la croix unicorn DIY. Woke offal jianbing venmo tote bag, palo santo subway tile slow-carb post-ironic pug ugh taxidermy squid.',
+      'Pour-over glossier chambray umami 3 wolf moon. Iceland kale chips asymmetrical craft beer actually forage, biodiesel tattooed fingerstache. Pork belly lomo man braid, portland pitchfork locavore man bun prism.',
+    ],
+    company: 'CUKER',
+  },
+];
+
 export const reviews = [
   {
     id: 1,
-    name: 'Susan Smith',
-    job: 'WEB DEVELOPER',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-    text: "I accidentally updated the billing address on an order rather than the shipping address, which resulted in both addresses being incorrect. Unilevex actually sent out a second order with the correct shipping and billing addresses before they received the first order back. They also didn't charge me anything extra! It was one of the best online support experiences I've ever had.",
-  },
-  {
-    id: 2,
     name: 'Anna Johnson',
     job: 'WEB DESIGNER',
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
     text: "Fast delivery, good choice. I know what I want to read and I don't like being forced down 'woke' paths to choose my books. Unilevex doesn't do that meanwhile supporting local bookshops rather than the tax-avoiding megacorps that dominate the net.",
+  },
+  {
+    id: 2,
+    name: 'Susan Smith',
+    job: 'WEB DEVELOPER',
+    image:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+    text: "I accidentally updated the billing address on an order rather than the shipping address, which resulted in both addresses being incorrect. Unilevex actually sent out a second order with the correct shipping and billing addresses before they received the first order back. They also didn't charge me anything extra! It was one of the best online support experiences I've ever had.",
   },
   {
     id: 3,

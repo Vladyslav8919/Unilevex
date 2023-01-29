@@ -1,35 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { FaSquareFull } from 'react-icons/fa';
 import Title from '../Title';
-
-const url = 'https://course-api.com/react-tabs-project';
+import { jobs } from '../../data';
 
 const Tabs = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [jobs, setJobs] = useState([]);
   const [value, setValue] = useState(0);
 
-  const fetchJobs = async () => {
-    const response = await fetch(url);
-    const newJobs = await response.json();
-    setJobs(newJobs);
-    setIsLoading(false);
-  };
-  useEffect(() => {
-    fetchJobs();
-  }, []);
-  if (isLoading)
-    return (
-      <section className="section section-center loading">
-        <h1>Loading...</h1>
-      </section>
-    );
   const { company, dates, duties, title } = jobs[value];
 
   return (
-    <section className="section section-center ">
-      <div className="title pt-16">
-        <Title>Lorem</Title>
+    <section className="section section-center">
+      <div className="title">
+        <Title>Our Vision</Title>
         <div className="jobs-center">
           <div className="flex place-content-center gap-x-2 mb-5 w-3/4 mx-auto">
             {jobs.map((item, index) => {
@@ -37,17 +19,16 @@ const Tabs = () => {
                 <button
                   key={index}
                   onClick={() => setValue(index)}
-                  className={`mb-1  ${index === value && 'active-btn'}`}
+                  className={`m-2 mb-1 p-1  ${
+                    index === value && 'font-bold border-b-2 border-gray-800'
+                  }`}
                 >
-                  {item.company}
+                  {item.title}
                 </button>
               );
             })}
           </div>
           <article className="job-info">
-            <h3>{title}</h3>
-            <h4>{company}</h4>
-            <p className="job-date">{dates}</p>
             {duties.map((duty, index) => {
               return (
                 <div
@@ -65,12 +46,6 @@ const Tabs = () => {
           </article>
         </div>
       </div>
-      {/* <button
-        type="button"
-        className="border border-black block mx-auto my-0 py-1.5 px-2 font-medium"
-      >
-        More Info
-      </button> */}
     </section>
   );
 };

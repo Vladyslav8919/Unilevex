@@ -3,7 +3,7 @@ import PageLinks from './PageLinks';
 
 const Footer = () => {
   return (
-    <footer className="text-sm h-auto pt-6 pb-2 flex flex-col justify-center items-center bg-black text-center">
+    <footer className="text-sm h-auto pt-6 pb-2 flex flex-col justify-center items-center bg-[#1a1a1a] text-center">
       <PageLinks parentClass="footer-links" itemClass="footer-link" />
       <ul className="footer-icons">
         {socialLinks.map(({ id, href, icon }) => (
