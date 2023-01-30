@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import { FiShoppingCart } from 'react-icons/fi';
 import { RxPerson } from 'react-icons/rx';
+import { useUserContext } from '../../context/user_context';
 import { useProductsContext } from '../../context/products_context';
 import { useCartContext } from '../../context/cart_context';
 
 const NavButtons = ({ children, href }) => {
+  const { loginWithRedirect } = useUserContext();
   const { isSidebarOpen, closeSidebar } = useProductsContext();
   const { total_items } = useCartContext();
   // const isSidebarOpen = true;
@@ -33,6 +35,7 @@ const NavButtons = ({ children, href }) => {
           </span>
         </span>
       </Link>
+
       <button
         type="button"
         className={
@@ -40,6 +43,7 @@ const NavButtons = ({ children, href }) => {
             ? "before:content-['Login'] before:m-1 block text-sm font-bold hover:text-gray-600"
             : ''
         }
+        onClick={loginWithRedirect}
       >
         <RxPerson />
       </button>

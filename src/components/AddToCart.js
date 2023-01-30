@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaCheck } from 'react-icons/fa';
+import { IoCheckmarkOutline } from 'react-icons/io5';
 import { useCartContext } from '../context/cart_context';
 import AmountButtons from './AmountButtons';
 
@@ -49,7 +49,7 @@ const AddToCart = ({ product }) => {
                 }`}
                 onClick={() => setMainColor(color)}
               >
-                {mainColor === color ? <FaCheck /> : null}
+                {mainColor === color ? <IoCheckmarkOutline /> : null}
               </button>
             );
           })}

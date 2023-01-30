@@ -19,7 +19,10 @@ const Product = ({ image, name, price, id }) => {
         </Link>
       </div>
       <footer className="mt-1 flex  justify-between items-center">
-        <h5 className="mb-0 font-normal capitalize">{name}</h5>
+        <Link to={`/products/${id}`}>
+          <h5 className="mb-0 font-normal capitalize">{name}</h5>
+        </Link>
+
         <p className="text-sm text-[#aaa] mb-0 ">{formatPrice(price)}</p>
       </footer>
     </article>

@@ -1,6 +1,6 @@
 import { useFilterContext } from '../context/filter_context';
 import { getUniqueValues, formatPrice } from '../utils/helpers';
-import { FaCheck } from 'react-icons/fa';
+import { IoCheckmarkOutline } from 'react-icons/io5';
 
 const Filters = () => {
   const {
@@ -113,13 +113,13 @@ const Filters = () => {
                     style={{ background: c }}
                     className={`${
                       color === c
-                        ? 'inline-block w-4 h-4 rounded bg-[#222] mr-2 border-b-2 border-transparent pointer opacity-100 flex items-center justify-center'
-                        : 'inline-block w-4 h-4 rounded bg-[#222] mr-2 border-b-2 border-transparent pointer opacity-50 flex items-center justify-center'
+                        ? 'inline-block w-4 h-4 rounded bg-[#222] mr-2 border border-gray-200 border-b-2 border-gray-100 pointer opacity-100 flex items-center justify-center'
+                        : 'inline-block w-4 h-4 rounded bg-[#222] mr-2 border border-gray-100 border-b-2 border-gray-100 pointer opacity-50 flex items-center justify-center'
                     }`}
                     data-color={c}
                     onClick={updateFilters}
                   >
-                    {color === c ? <FaCheck /> : null}
+                    {color === c ? <IoCheckmarkOutline /> : null}
                   </button>
                 );
               })}
