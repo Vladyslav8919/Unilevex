@@ -92,7 +92,7 @@ const CheckoutForm = () => {
   };
 
   return (
-    <div>
+    <div className="h-[60vh] pt-8">
       {succeeded ? (
         <article>
           <h4>Thank you</h4>
